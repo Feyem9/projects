@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCALSTORAGE</title>
+    <link rel="stylesheet" href="local.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/twiter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <h1>LOCALSTORAGE</h1>
+    <table>
+        <tr>
+            <td>
+                <h2>MUSESCHOOL</h2>
+                <h3>STUDENTS</h3>
+                <form id="form">
+                    <input type="hidden" name="id" id="id">
+                    <label for="">full-name</label>
+                    <input type="text" placeholder="enter the user email" class="form-control" name="name" id="name"
+                        required> <br>
+                    <label for="">enrollement no</label>
+                    <input type="text" placeholder="enter your enrollement number" class="form-control" name="rollno"
+                        id="rollno" required> <br>
+                    <!-- <label for="">full name</label>
+                    <input type="text" placeholder="enter the user email" class="form-control" name="name" id="name"
+                        required> <br> -->
+                    <label for="">students class</label>
+                    <input type="text" placeholder="enter your student class" class="form-control" name="stdclass"
+                        id="stdclass" required> <br>
+                    <label for="">telephone number</label>
+                    <input type="number" placeholder="enter your telephone number" class="form-control" name="tnum"
+                        id="tnum" required> <br>
+                    <label for="">Age</label>
+                    <input type="number" placeholder="enter your Age" class="form-control" name="Age" id="Age" required>
+                    <br>
+                    <div class="form-action-button">
+                        <button class="btn btn-sm btn-primary" type="button" onclick="save()">save</button>
+                        <button class="btn btn-sm btn-primary" type="button" onclick="clearData()">reset</button>
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="image">
+                    <center> <img src="image3.jpeg" alt="piano"> </center>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="list" id="stdlist" class="table table-striped">
+        <thead>
+            <tr>
+                <th>full name </th>
+                <th>enrollement number</th>
+                <th>student class</th>
+                <th>telephone number</th>
+                <th>Age</th>
+                <th>edit</th>
+                <th>delete</th>
+
+            </tr>
+        </thead>
+        <tbody id="table">
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+    <script src="local.js"></script>
+</body>
+
+</html>
